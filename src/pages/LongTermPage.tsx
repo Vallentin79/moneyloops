@@ -13,7 +13,7 @@ function LongTermPage() {
     // const dataObjects = Helper.getLoopCardData(1);
     return (
         <>
-            parents: {parents.toString()} - path: {Helper.path.toString()} - children: {children.toString()} - level: {activeLevel}
+            {/* parents: {parents.toString()} - path: {Helper.path.toString()} - children: {children.toString()} - level: {activeLevel} */}
             {/* LEVEL 1 */}
             <Container fluid className={'fade-in-item'}>
                 <Row>

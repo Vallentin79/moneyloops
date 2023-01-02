@@ -17,7 +17,7 @@ function ShortTermPage() {
             {/* LEVEL 1 */}
             <Container fluid className={'fade-in-item'}>
                 <Row>
-                    <Col style={{ padding: 0 }}><h3 style={{ marginBottom: 20 }}>Short Term bummelum</h3></Col>
+                    <Col style={{ padding: 0 }}><h3 style={{ marginBottom: 20 }}>Short Term</h3></Col>
                 </Row>
                 <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
                     {Helper.getShortTermData(1).map((card, index) => {
