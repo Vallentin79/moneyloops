@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "icon": "bi bi-house-door",
+        "iconsize": 32,
+        "header": "Short term",
+        "text": "You prefere have you funds available in a short time period, this might cause lower apr's."
+    },
+    {
+        "id": 2,
+        "icon": "bi bi-buildings",
+        "iconsize": 32,
+        "header": "Long term",
+        "text": "You are willing to lock up funds, for a greater return, and possible higher apr's."
+    }
+]

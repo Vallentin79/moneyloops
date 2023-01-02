@@ -1,0 +1,8 @@
+h4 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.main.active {
+    padding: 18px 14px 5px 14px;
+}
