@@ -24,20 +24,11 @@ function ShortTermPage() {
                     {Helper.getShortTermData(1).map((card, index) => {
                         return <Col key={index}>
                             <LoopCard
-                                id={card.id}
                                 className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                icon={card.icon}
-                                iconsize={card.iconsize}
-                                imageSrc={card.imageSrc}
-                                imageWidth={card.imageWidth}
-                                children={card.children}
-                                parents={card.parents}
+                                card={card}
                                 onParentSelectChange={setParentSelect}
                                 onChildSelectChange={setChildren}
-                                onLevelSelectChange={setLevel}
-                                header={card.header}
-                                text={card.text}
-                                level={card.level}></LoopCard>
+                                onLevelSelectChange={setLevel}></LoopCard>
                         </Col>
                     })}
                 </Row>
@@ -49,25 +40,16 @@ function ShortTermPage() {
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>Choose your path</h3></Col>
                         </Row>
-                        <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                        <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getShortTermData(2).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.short)?.includes(card.id)) {
                                     return <Col key={index}>
                                         <LoopCard
-                                            id={card.id}
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                            icon={card.icon}
-                                            iconsize={card.iconsize}
-                                            imageSrc={card.imageSrc}
-                                            imageWidth={card.imageWidth}
-                                            children={card.children}
-                                            parents={card.parents}
+                                            card={card}
                                             onParentSelectChange={setParentSelect}
                                             onChildSelectChange={setChildren}
-                                            onLevelSelectChange={setLevel}
-                                            header={card.header}
-                                            text={card.text}
-                                            level={card.level}></LoopCard>
+                                            onLevelSelectChange={setLevel}></LoopCard>
                                     </Col>
                                 }
                             })}
@@ -81,25 +63,16 @@ function ShortTermPage() {
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>Great choice</h3></Col>
                         </Row>
-                        <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                        <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getShortTermData(3).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.short)?.includes(card.id)) {
                                     return <Col key={index}>
                                         <LoopCard
-                                            id={card.id}
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                            icon={card.icon}
-                                            iconsize={card.iconsize}
-                                            imageSrc={card.imageSrc}
-                                            imageWidth={card.imageWidth}
-                                            children={card.children}
-                                            parents={card.parents}
+                                            card={card}
                                             onParentSelectChange={setParentSelect}
                                             onChildSelectChange={setChildren}
-                                            onLevelSelectChange={setLevel}
-                                            header={card.header}
-                                            text={card.text}
-                                            level={card.level}></LoopCard>
+                                            onLevelSelectChange={setLevel}></LoopCard>
                                     </Col>
                                 }
                             })}
@@ -109,29 +82,20 @@ function ShortTermPage() {
             {/* LEVEL 4 */}
             {
                 Helper.path.length >= 3 ?
-                    <Container fluid className={'fade-in-item'}>                         
+                    <Container fluid className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>It just keeps giving</h3></Col>
                         </Row>
-                        <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                        <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getShortTermData(4).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.short)?.includes(card.id)) {
                                     return <Col key={index}>
                                         <LoopCard
-                                            id={card.id}
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                            icon={card.icon}
-                                            iconsize={card.iconsize}
-                                            imageSrc={card.imageSrc}
-                                            imageWidth={card.imageWidth}
-                                            children={card.children}
-                                            parents={card.parents}
+                                            card={card}
                                             onParentSelectChange={setParentSelect}
                                             onChildSelectChange={setChildren}
-                                            onLevelSelectChange={setLevel}
-                                            header={card.header}
-                                            text={card.text}
-                                            level={card.level}></LoopCard>
+                                            onLevelSelectChange={setLevel}></LoopCard>
                                     </Col>
                                 }
                             })}

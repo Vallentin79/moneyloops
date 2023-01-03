@@ -19,24 +19,15 @@ function LongTermPage() {
                 <Row>
                     <Col style={{ padding: 0 }}><h3 style={{ marginBottom: 20 }}>Long Term</h3></Col>
                 </Row>
-                <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                     {Helper.getLongTermData(1).map((card, index) => {
                         return <Col key={index}>
                             <LoopCard
-                                id={card.id}
                                 className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                icon={card.icon}
-                                iconsize={card.iconsize}
-                                imageSrc={card.imageSrc}
-                                imageWidth={card.imageWidth}
-                                children={card.children}
-                                parents={card.parents}
+                                card={card}
                                 onParentSelectChange={setParentSelect}
                                 onChildSelectChange={setChildren}
-                                onLevelSelectChange={setLevel}
-                                header={card.header}
-                                text={card.text}
-                                level={card.level}></LoopCard>
+                                onLevelSelectChange={setLevel}></LoopCard>
                         </Col>
                     })}
                 </Row>
@@ -48,25 +39,16 @@ function LongTermPage() {
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>Choose your path</h3></Col>
                         </Row>
-                        <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                        <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getLongTermData(2).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.long)?.includes(card.id)) {
                                     return <Col key={index}>
                                         <LoopCard
-                                            id={card.id}
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                            icon={card.icon}
-                                            iconsize={card.iconsize}
-                                            imageSrc={card.imageSrc}
-                                            imageWidth={card.imageWidth}
-                                            children={card.children}
-                                            parents={card.parents}
+                                            card={card}
                                             onParentSelectChange={setParentSelect}
                                             onChildSelectChange={setChildren}
-                                            onLevelSelectChange={setLevel}
-                                            header={card.header}
-                                            text={card.text}
-                                            level={card.level}></LoopCard>
+                                            onLevelSelectChange={setLevel}></LoopCard>
                                     </Col>
                                 }
                             })}
@@ -80,25 +62,16 @@ function LongTermPage() {
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>Great choice</h3></Col>
                         </Row>
-                        <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                        <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getLongTermData(3).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.long)?.includes(card.id)) {
                                     return <Col key={index}>
                                         <LoopCard
-                                            id={card.id}
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                            icon={card.icon}
-                                            iconsize={card.iconsize}
-                                            imageSrc={card.imageSrc}
-                                            imageWidth={card.imageWidth}
-                                            children={card.children}
-                                            parents={card.parents}
+                                            card={card}
                                             onParentSelectChange={setParentSelect}
                                             onChildSelectChange={setChildren}
-                                            onLevelSelectChange={setLevel}
-                                            header={card.header}
-                                            text={card.text}
-                                            level={card.level}></LoopCard>
+                                            onLevelSelectChange={setLevel}></LoopCard>
                                     </Col>
                                 }
                             })}
@@ -108,29 +81,20 @@ function LongTermPage() {
             {/* LEVEL 4 */}
             {
                 Helper.path.length >= 3 ?
-                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>                         
+                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>It just keeps giving</h3></Col>
                         </Row>
-                        <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                        <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getLongTermData(4).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.long)?.includes(card.id)) {
                                     return <Col key={index}>
                                         <LoopCard
-                                            id={card.id}
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                            icon={card.icon}
-                                            iconsize={card.iconsize}
-                                            imageSrc={card.imageSrc}
-                                            imageWidth={card.imageWidth}
-                                            children={card.children}
-                                            parents={card.parents}
+                                            card={card}
                                             onParentSelectChange={setParentSelect}
                                             onChildSelectChange={setChildren}
-                                            onLevelSelectChange={setLevel}
-                                            header={card.header}
-                                            text={card.text}
-                                            level={card.level}></LoopCard>
+                                            onLevelSelectChange={setLevel}></LoopCard>
                                     </Col>
                                 }
                             })}
@@ -140,29 +104,20 @@ function LongTermPage() {
             {/* LEVEL 5 */}
             {
                 Helper.path.length >= 4 ?
-                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>                         
+                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>Keep the wheel turning</h3></Col>
                         </Row>
-                        <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                        <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getLongTermData(5).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.long)?.includes(card.id)) {
                                     return <Col key={index}>
                                         <LoopCard
-                                            id={card.id}
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                            icon={card.icon}
-                                            iconsize={card.iconsize}
-                                            imageSrc={card.imageSrc}
-                                            imageWidth={card.imageWidth}
-                                            children={card.children}
-                                            parents={card.parents}
+                                            card={card}
                                             onParentSelectChange={setParentSelect}
                                             onChildSelectChange={setChildren}
-                                            onLevelSelectChange={setLevel}
-                                            header={card.header}
-                                            text={card.text}
-                                            level={card.level}></LoopCard>
+                                            onLevelSelectChange={setLevel}></LoopCard>
                                     </Col>
                                 }
                             })}
@@ -172,29 +127,21 @@ function LongTermPage() {
             {/* LEVEL 6 */}
             {
                 Helper.path.length >= 5 ?
-                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>                         
+                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>This is awesome</h3></Col>
                         </Row>
-                        <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                        <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getLongTermData(6).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.long)?.includes(card.id)) {
                                     return <Col key={index}>
                                         <LoopCard
-                                            id={card.id}
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
-                                            icon={card.icon}
-                                            iconsize={card.iconsize}
-                                            imageSrc={card.imageSrc}
-                                            imageWidth={card.imageWidth}
-                                            children={card.children}
-                                            parents={card.parents}
+                                            card={card}
                                             onParentSelectChange={setParentSelect}
                                             onChildSelectChange={setChildren}
-                                            onLevelSelectChange={setLevel}
-                                            header={card.header}
-                                            text={card.text}
-                                            level={card.level}></LoopCard>
+                                            onLevelSelectChange={setLevel}></LoopCard>
+
                                     </Col>
                                 }
                             })}

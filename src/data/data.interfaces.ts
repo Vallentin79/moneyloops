@@ -17,6 +17,14 @@ export interface LoopCardObject {
     imageSrc?: string;
     imageWidth?: number;
     level: number;
+    modalContent: ModalContent[],
+    videoTitle: string,
+    videoSrc: string
+}
+
+export interface ModalContent{
+    classname: string,
+    text: string
 }
 
 export enum Terms {

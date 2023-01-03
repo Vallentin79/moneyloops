@@ -3,22 +3,37 @@
         {
             "id": 100,
             "parents": [],
-            "children": [200,201,202],
+            "children": [
+                200,
+                201,
+                202
+            ],
             "header": "FARMS",
             "text": "Auto farms, set and forget",
             "level": 1,
             "imageSrc": "/images/farms.PNG",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 101,
             "parents": [],
-            "children": [203,204,205,206],
+            "children": [
+                203,
+                204,
+                205,
+                206
+            ],
             "header": "NODES",
             "text": "EMP emiting node (400% ROI)",
             "level": 1,
             "imageSrc": "/images/nodes.PNG",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 102,
@@ -28,110 +43,155 @@
             "text": "Yielding NFT's",
             "level": 1,
             "imageSrc": "/images/Untitled.png",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         }
     ],
-    "level2": [                
+    "level2": [
         {
             "id": 200,
-            "parents": [100],
+            "parents": [
+                100
+            ],
             "children": [],
             "header": "MAGIK",
             "text": "Auto burn vault",
             "level": 2,
             "imageSrc": "/images/magik.png",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 201,
-            "parents": [100],
+            "parents": [
+                100
+            ],
             "children": [],
             "header": "BEEFY",
             "text": "Auto compounding vault",
             "level": 2,
             "imageSrc": "/images/beefy.png",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 202,
-            "parents": [100],
+            "parents": [
+                100
+            ],
             "children": [],
             "header": "YIELDWOLF",
             "text": "Auto compounding vault",
             "level": 2,
             "imageSrc": "/images/yieldwolf.png",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 203,
-            "parents": [101],
-            "children": [300,301],
+            "parents": [
+                101
+            ],
+            "children": [
+                300,
+                301
+            ],
             "header": "ETH",
             "text": "Pair EMP with fresh ETH",
             "level": 2,
             "imageSrc": "/images/eth.png",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 204,
-            "parents": [101],
+            "parents": [
+                101
+            ],
             "children": [],
             "header": "SPLINTERLANDS",
             "text": "Invest in Splinterlands",
             "level": 2,
             "imageSrc": "/images/splinterlands.png",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 205,
-            "parents": [101],
+            "parents": [
+                101
+            ],
             "children": [],
             "header": "UP FINANCE",
             "text": "Invest in upEMP",
             "level": 2,
             "imageSrc": "/images/upfinance.png",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 206,
-            "parents": [101],
+            "parents": [
+                101
+            ],
             "children": [],
             "header": "GROWTH DEFI",
             "text": "Invest in Growth Defi",
             "level": 2,
             "imageSrc": "/images/growthdefi.png",
-            "imageWidth": 65               
-        }        
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
+        }
     ],
     "level3": [
         {
             "id": 300,
-            "parents": [203],
+            "parents": [
+                203
+            ],
             "children": [],
             "header": "FARMS",
             "text": "Auto farms, set and forget",
             "level": 3,
             "imageSrc": "/images/farms.PNG",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 301,
-            "parents": [203],
+            "parents": [
+                203
+            ],
             "children": [],
             "header": "DETONATOR",
             "text": "Chance to win (365% ROI)",
             "level": 3,
             "imageSrc": "/images/detonator.PNG",
-            "imageWidth": 65               
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         }
     ],
-    "level4": [
-       
-    ],
-    "level5": [
-        
-    ],
-    "level6": [       
-        
-    ]
+    "level4": [],
+    "level5": [],
+    "level6": []
 }

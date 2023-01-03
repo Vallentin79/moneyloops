@@ -13,12 +13,16 @@
   
   .modal-box {
     display: block;
-    background: white;
+    background: black;
     position: relative;
     top: -20%;    
     padding: 1rem;
     border-radius: 1rem;
-    color: black;
+    color: white; 
+    border: 1px solid #b0c6ff;
+    max-width: 60%;
+    min-width: 40%;
+    font-size: 16px;
   }
 
   .modal-close{
@@ -30,9 +34,25 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: -32px;
-    right: -130px;
+    position: absolute;
+    top: -22px;
+    right: -23px;
     color: white;
     z-index: 100;
+  }
+
+  .box{
+    margin-top: 10px;
+  }
+
+  .boxHeader{
+    font-size: 26px;
+  }
+
+  .boxBold{
+    font-weight: bold;
+  }
+
+  .boxItalic{
+    font-style: italic;
   }

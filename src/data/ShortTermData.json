@@ -3,198 +3,348 @@
         {
             "id": 11,
             "parents": [],
-            "children": [21,22],
+            "children": [
+                21,
+                22
+            ],
             "header": "EMP/ETH",
-            "text": "Liquidity Pool",
+            "text": "Liquidity Pool Farm",
             "level": 1,
             "imageSrc": "/images/ethLP.png",
-            "imageWidth": 65
+            "imageWidth": 65,
+            "modalContent": [
+                {                    
+                    "classname": "boxHeader",
+                    "text": "Farms"
+                },
+                {                   
+                    "classname": "box boxBold",
+                    "text": "Farms give investors an easy way to get a hold of ESHARE -- the  limited supply governance token of EMP.Money."
+                },
+                {
+                    "classname": "box",
+                    "text": "Farms will continue rewarding ESHARE until the max supply of ESHARE (28K) is reached, at which point emissions stop. This is going to be in a year from when the ESHARE farms started."
+                },
+                {
+                    "classname": "box boxItalic",
+                    "text": "(Note: There is a proposed extension of ESHARE emissions being considered. Please inquire in our Telegram/Discord Channels for more information.)"
+                },
+                {
+                    "classname": "box boxBold",
+                    "text": "Users can participate in the farm to earn ESHARE:"
+                }
+            ],
+            "videoTitle": "What Are Farms?",
+            "videoSrc": "https://www.youtube.com/embed/pv0bMkaRSXk"
         },
         {
             "id": 12,
             "parents": [],
-            "children": [21,22],
+            "children": [
+                21,
+                22
+            ],
             "header": "ESHARE",
             "text": "Locking Pool (21 days)",
-            "level": 1,            
+            "level": 1,
             "imageSrc": "/images/eshare.png",
-            "imageWidth": 65
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 13,
             "parents": [],
-            "children": [23],
+            "children": [
+                23
+            ],
             "header": "DEFENDER NFT",
             "text": "Rewards in EMP/ETH LP daily",
             "level": 1,
             "imageSrc": "/images/defender.png",
-            "imageWidth": 65    
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 14,
             "parents": [],
-            "children": [25,24],
+            "children": [
+                25,
+                24
+            ],
             "header": "SENTINEL NFT",
             "text": "Rewards in ESHARE/MDB daily",
-            "level": 1,            
+            "level": 1,
             "imageSrc": "/images/sentinel.png",
-            "imageWidth": 65    
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         }
     ],
     "level2": [
         {
             "id": 21,
-            "parents": [11,12,13,14],
-            "children": [31,32],
+            "parents": [
+                11,
+                12,
+                13,
+                14
+            ],
+            "children": [
+                31,
+                32
+            ],
             "header": "COMPOUND",
             "text": "Zap ESHARE back into farm",
             "icon": "bi bi-arrow-clockwise",
             "iconsize": 45,
-            "level": 2            
+            "level": 2,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
-            "id": 22,      
-            "parents": [11,12,14],      
-            "children": [33],
+            "id": 22,
+            "parents": [
+                11,
+                12,
+                14
+            ],
+            "children": [
+                33
+            ],
             "header": "TAKE PROFIT",
             "text": "Sell ESHARE",
             "icon": "bi bi-cash-coin",
             "iconsize": 45,
-            "level": 2            
+            "level": 2,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 23,
-            "parents": [13],
-            "children": [34,35],
+            "parents": [
+                13
+            ],
+            "children": [
+                34,
+                35
+            ],
             "header": "EMP/ETH",
             "text": "Deposit into Liquidity Pool",
             "level": 2,
             "imageSrc": "/images/ethLP.png",
-            "imageWidth": 65   
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
-            "id": 24,      
-            "parents": [11,12,14],      
-            "children": [33,36],
+            "id": 24,
+            "parents": [
+                11,
+                12,
+                14
+            ],
+            "children": [
+                33,
+                36
+            ],
             "header": "TAKE PROFIT",
             "text": "Sell ESHARE/MDB",
             "icon": "bi bi-cash-coin",
             "iconsize": 45,
-            "level": 2            
+            "level": 2,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 25,
-            "parents": [14],
-            "children": [31,32,37],
+            "parents": [
+                14
+            ],
+            "children": [
+                31,
+                32,
+                37
+            ],
             "header": "COMPOUND",
             "text": "Zap ESHARE into farm / stake MDB",
             "icon": "bi bi-arrow-clockwise",
             "iconsize": 45,
-            "level": 2            
+            "level": 2,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         }
     ],
     "level3": [
         {
             "id": 31,
-            "parents": [21,22],
+            "parents": [
+                21,
+                22
+            ],
             "children": [],
             "header": "EMP/ETH",
             "text": "Zap into Liquidity Pool",
             "level": 3,
             "imageSrc": "/images/ethLP.png",
-            "imageWidth": 65   
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 32,
-            "parents": [21,22],
+            "parents": [
+                21,
+                22
+            ],
             "children": [],
             "header": "ESHARE",
             "text": "Deposit into Locking Pool (21 days)",
-            "level": 3,            
+            "level": 3,
             "imageSrc": "/images/eshare.png",
-            "imageWidth": 65            
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 33,
-            "parents": [22],
+            "parents": [
+                22
+            ],
             "children": [],
             "header": "PANCAKE SWAP",
             "text": "Sell ESHARE",
-            "level": 3,            
+            "level": 3,
             "imageSrc": "/images/pancake.png",
-            "imageWidth": 65            
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 34,
-            "parents": [23],
-            "children": [41,42],
+            "parents": [
+                23
+            ],
+            "children": [
+                41,
+                42
+            ],
             "header": "COMPOUND",
             "text": "Zap ESHARE back into farm",
             "icon": "bi bi-arrow-clockwise",
             "iconsize": 45,
-            "level": 3            
+            "level": 3,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
-            "id": 35,      
-            "parents": [23],      
-            "children": [43],
+            "id": 35,
+            "parents": [
+                23
+            ],
+            "children": [
+                43
+            ],
             "header": "TAKE PROFIT",
             "text": "Sell ESHARE",
             "icon": "bi bi-cash-coin",
             "iconsize": 45,
-            "level": 3            
+            "level": 3,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 36,
-            "parents": [24],
+            "parents": [
+                24
+            ],
             "children": [],
             "header": "XENIA",
             "text": "Sell MDB",
-            "level": 3,            
+            "level": 3,
             "imageSrc": "/images/xenia.png",
-            "imageWidth": 65            
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 37,
-            "parents": [21],
+            "parents": [
+                21
+            ],
             "children": [],
             "header": "MDB STAKING",
             "text": "Stake MDB on XENIA",
-            "level": 3,            
+            "level": 3,
             "imageSrc": "/images/xenia.png",
-            "imageWidth": 65            
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         }
     ],
     "level4": [
         {
             "id": 41,
-            "parents": [34,35],
+            "parents": [
+                34,
+                35
+            ],
             "children": [],
             "header": "EMP/ETH",
             "text": "Zap into Liquidity Pool",
             "level": 4,
             "imageSrc": "/images/ethLP.png",
-            "imageWidth": 65   
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 42,
-            "parents": [11,12],
+            "parents": [
+                11,
+                12
+            ],
             "children": [],
             "header": "ESHARE",
             "text": "Deposit into Locking Pool (21 days)",
-            "level": 4,            
+            "level": 4,
             "imageSrc": "/images/eshare.png",
-            "imageWidth": 65            
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         },
         {
             "id": 43,
-            "parents": [35],
+            "parents": [
+                35
+            ],
             "children": [],
             "header": "PANCAKE SWAP",
             "text": "Sell ESHARE",
-            "level": 4,            
+            "level": 4,
             "imageSrc": "/images/pancake.png",
-            "imageWidth": 65            
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
         }
     ]
 }
