@@ -8,6 +8,13 @@ body{
   overflow-x: hidden;
 }
 
+p.anchor{
+  font-size: 12px;
+  text-decoration: underline;
+  color: rgb(177, 199, 255);
+  font-weight: bold;
+}
+
 p{
   line-height: 20px;
   margin: 0;

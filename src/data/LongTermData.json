@@ -8,7 +8,7 @@
             "text": "Auto farms, set and forget",
             "level": 1,
             "imageSrc": "/images/farms.PNG",
-            "imageWidth": 200               
+            "imageWidth": 65               
         },
         {
             "id": 101,
@@ -18,7 +18,7 @@
             "text": "EMP emiting node (400% ROI)",
             "level": 1,
             "imageSrc": "/images/nodes.PNG",
-            "imageWidth": 200               
+            "imageWidth": 65               
         },
         {
             "id": 102,
@@ -28,7 +28,7 @@
             "text": "Yielding NFT's",
             "level": 1,
             "imageSrc": "/images/Untitled.png",
-            "imageWidth": 200               
+            "imageWidth": 65               
         }
     ],
     "level2": [                
@@ -40,7 +40,7 @@
             "text": "Auto burn vault",
             "level": 2,
             "imageSrc": "/images/magik.png",
-            "imageWidth": 100               
+            "imageWidth": 65               
         },
         {
             "id": 201,
@@ -50,7 +50,7 @@
             "text": "Auto compounding vault",
             "level": 2,
             "imageSrc": "/images/beefy.png",
-            "imageWidth": 100               
+            "imageWidth": 65               
         },
         {
             "id": 202,
@@ -60,7 +60,7 @@
             "text": "Auto compounding vault",
             "level": 2,
             "imageSrc": "/images/yieldwolf.png",
-            "imageWidth": 100               
+            "imageWidth": 65               
         },
         {
             "id": 203,
@@ -70,7 +70,7 @@
             "text": "Pair EMP with fresh ETH",
             "level": 2,
             "imageSrc": "/images/eth.png",
-            "imageWidth": 100               
+            "imageWidth": 65               
         },
         {
             "id": 204,
@@ -80,7 +80,7 @@
             "text": "Invest in Splinterlands",
             "level": 2,
             "imageSrc": "/images/splinterlands.png",
-            "imageWidth": 140               
+            "imageWidth": 65               
         },
         {
             "id": 205,
@@ -90,7 +90,7 @@
             "text": "Invest in upEMP",
             "level": 2,
             "imageSrc": "/images/upfinance.png",
-            "imageWidth": 125               
+            "imageWidth": 65               
         },
         {
             "id": 206,
@@ -100,7 +100,7 @@
             "text": "Invest in Growth Defi",
             "level": 2,
             "imageSrc": "/images/growthdefi.png",
-            "imageWidth": 100               
+            "imageWidth": 65               
         }        
     ],
     "level3": [
@@ -112,7 +112,7 @@
             "text": "Auto farms, set and forget",
             "level": 3,
             "imageSrc": "/images/farms.PNG",
-            "imageWidth": 200               
+            "imageWidth": 65               
         },
         {
             "id": 301,
@@ -122,7 +122,7 @@
             "text": "Chance to win (365% ROI)",
             "level": 3,
             "imageSrc": "/images/detonator.PNG",
-            "imageWidth": 200               
+            "imageWidth": 65               
         }
     ],
     "level4": [

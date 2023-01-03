@@ -8,7 +8,7 @@
             "text": "Liquidity Pool",
             "level": 1,
             "imageSrc": "/images/ethLP.png",
-            "imageWidth": 100
+            "imageWidth": 65
         },
         {
             "id": 12,
@@ -18,7 +18,7 @@
             "text": "Locking Pool (21 days)",
             "level": 1,            
             "imageSrc": "/images/eshare.png",
-            "imageWidth": 100
+            "imageWidth": 65
         },
         {
             "id": 13,
@@ -28,7 +28,7 @@
             "text": "Rewards in EMP/ETH LP daily",
             "level": 1,
             "imageSrc": "/images/defender.png",
-            "imageWidth": 100    
+            "imageWidth": 65    
         },
         {
             "id": 14,
@@ -38,7 +38,7 @@
             "text": "Rewards in ESHARE/MDB daily",
             "level": 1,            
             "imageSrc": "/images/sentinel.png",
-            "imageWidth": 100    
+            "imageWidth": 65    
         }
     ],
     "level2": [
@@ -49,7 +49,7 @@
             "header": "COMPOUND",
             "text": "Zap ESHARE back into farm",
             "icon": "bi bi-arrow-clockwise",
-            "iconsize": 67,
+            "iconsize": 45,
             "level": 2            
         },
         {
@@ -59,7 +59,7 @@
             "header": "TAKE PROFIT",
             "text": "Sell ESHARE",
             "icon": "bi bi-cash-coin",
-            "iconsize": 67,
+            "iconsize": 45,
             "level": 2            
         },
         {
@@ -70,7 +70,7 @@
             "text": "Deposit into Liquidity Pool",
             "level": 2,
             "imageSrc": "/images/ethLP.png",
-            "imageWidth": 100   
+            "imageWidth": 65   
         },
         {
             "id": 24,      
@@ -79,7 +79,7 @@
             "header": "TAKE PROFIT",
             "text": "Sell ESHARE/MDB",
             "icon": "bi bi-cash-coin",
-            "iconsize": 67,
+            "iconsize": 45,
             "level": 2            
         },
         {
@@ -89,7 +89,7 @@
             "header": "COMPOUND",
             "text": "Zap ESHARE into farm / stake MDB",
             "icon": "bi bi-arrow-clockwise",
-            "iconsize": 67,
+            "iconsize": 45,
             "level": 2            
         }
     ],
@@ -102,7 +102,7 @@
             "text": "Zap into Liquidity Pool",
             "level": 3,
             "imageSrc": "/images/ethLP.png",
-            "imageWidth": 100   
+            "imageWidth": 65   
         },
         {
             "id": 32,
@@ -112,7 +112,7 @@
             "text": "Deposit into Locking Pool (21 days)",
             "level": 3,            
             "imageSrc": "/images/eshare.png",
-            "imageWidth": 100            
+            "imageWidth": 65            
         },
         {
             "id": 33,
@@ -122,7 +122,7 @@
             "text": "Sell ESHARE",
             "level": 3,            
             "imageSrc": "/images/pancake.png",
-            "imageWidth": 100            
+            "imageWidth": 65            
         },
         {
             "id": 34,
@@ -131,7 +131,7 @@
             "header": "COMPOUND",
             "text": "Zap ESHARE back into farm",
             "icon": "bi bi-arrow-clockwise",
-            "iconsize": 67,
+            "iconsize": 45,
             "level": 3            
         },
         {
@@ -141,7 +141,7 @@
             "header": "TAKE PROFIT",
             "text": "Sell ESHARE",
             "icon": "bi bi-cash-coin",
-            "iconsize": 67,
+            "iconsize": 45,
             "level": 3            
         },
         {
@@ -152,7 +152,7 @@
             "text": "Sell MDB",
             "level": 3,            
             "imageSrc": "/images/xenia.png",
-            "imageWidth": 100            
+            "imageWidth": 65            
         },
         {
             "id": 37,
@@ -162,7 +162,7 @@
             "text": "Stake MDB on XENIA",
             "level": 3,            
             "imageSrc": "/images/xenia.png",
-            "imageWidth": 100            
+            "imageWidth": 65            
         }
     ],
     "level4": [
@@ -174,7 +174,7 @@
             "text": "Zap into Liquidity Pool",
             "level": 4,
             "imageSrc": "/images/ethLP.png",
-            "imageWidth": 100   
+            "imageWidth": 65   
         },
         {
             "id": 42,
@@ -184,7 +184,7 @@
             "text": "Deposit into Locking Pool (21 days)",
             "level": 4,            
             "imageSrc": "/images/eshare.png",
-            "imageWidth": 100            
+            "imageWidth": 65            
         },
         {
             "id": 43,
@@ -194,7 +194,7 @@
             "text": "Sell ESHARE",
             "level": 4,            
             "imageSrc": "/images/pancake.png",
-            "imageWidth": 100            
+            "imageWidth": 65            
         }
     ]
 }

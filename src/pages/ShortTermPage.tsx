@@ -4,6 +4,7 @@ import LoopCard from '../components/LoopCard/LoopCard';
 import { Terms } from '../data/data.interfaces';
 import { Helper } from '../services/helper';
 
+
 Helper.resetPath();
 
 function ShortTermPage() {
@@ -19,7 +20,7 @@ function ShortTermPage() {
                 <Row>
                     <Col style={{ padding: 0 }}><h3 style={{ marginBottom: 20 }}>Short Term</h3></Col>
                 </Row>
-                <Row xs={1} sm={2} lg={3} xl={4} xxl={6}>
+                <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                     {Helper.getShortTermData(1).map((card, index) => {
                         return <Col key={index}>
                             <LoopCard
