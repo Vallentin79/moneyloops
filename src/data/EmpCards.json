@@ -12,5 +12,12 @@
         "iconsize": 32,
         "header": "Long term",
         "text": "You are willing to lock up funds, for a greater return, and possible higher apr's."
+    },
+    {
+        "id": 3,
+        "icon": "bi bi-graph-up-arrow",
+        "iconsize": 32,
+        "header": "Peg Recovery",
+        "text": "Here is how you can help contributing to recover and maintain peg. Do not sell EMP, utilize it."
     }
 ]

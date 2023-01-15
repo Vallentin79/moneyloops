@@ -13,7 +13,7 @@ function LoopPage() {
             <h2>What is your strategy?</h2>
             <Container fluid>
                 {/* xs={1} sm={1} md={4} lg={6} */}
-                <Row xs={1} sm={1} lg={2} xl={2} xxl={3}>
+                <Row xs={1} sm={1} lg={2} xl={3} xxl={3}>
                     {dataObjects.map((card, index) => {
                         return <Col key={index}>
                             <EmpCard

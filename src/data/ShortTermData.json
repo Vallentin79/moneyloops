@@ -15,23 +15,23 @@
             "modalContent": [
                 {                    
                     "classname": "boxHeader",
-                    "text": "Farms"
+                    "text": "EMP/ETH Farm"
                 },
                 {                   
                     "classname": "box boxBold",
-                    "text": "Farms give investors an easy way to get a hold of ESHARE -- the  limited supply governance token of EMP.Money."
+                    "text": "This Farm give investors an easy way to get a hold of ESHARE -- the  limited supply governance token of EMP.Money."
                 },
                 {
                     "classname": "box",
-                    "text": "Farms will continue rewarding ESHARE until the max supply of ESHARE (28K) is reached, at which point emissions stop. This is going to be in a year from when the ESHARE farms started."
+                    "text": "It will continue rewarding ESHARE until the max supply of ESHARE (28K) is reached, at which point emissions stop. This is going to be in a year from when the ESHARE farms started."
                 },
                 {
                     "classname": "box boxItalic",
-                    "text": "(Note: There is a proposed extension of ESHARE emissions being considered. Please inquire in our Telegram/Discord Channels for more information.)"
+                    "text": "(Note: There is a proposed extension of ESHARE emissions being considered. It is official, ESHARE emisseion are exstended for a year (28k), then halfed every year (14k, 7k, etc.))"
                 },
                 {
                     "classname": "box boxBold",
-                    "text": "Users can participate in the farm to earn ESHARE:"
+                    "text": "Users can participate in the farm to earn ESHARE: Token EMP/ETH LP"
                 }
             ],
             "videoTitle": "What Are Farms?",
@@ -49,7 +49,28 @@
             "level": 1,
             "imageSrc": "/images/eshare.png",
             "imageWidth": 65,
-            "modalContent": [],
+            "modalContent": [
+                {                    
+                    "classname": "boxHeader",
+                    "text": "ESHARE Farm"
+                },
+                {                   
+                    "classname": "box boxBold",
+                    "text": "This Farm give investors an easy way to get a hold of ESHARE -- By investing the ESHARE allready in supply."
+                },
+                {
+                    "classname": "box",
+                    "text": "It will continue rewarding ESHARE until the emissions of ESHARE stop. This is going to be in a year from when the ESHARE farms started."
+                },
+                {
+                    "classname": "box boxItalic",
+                    "text": "(Note: There is a proposed extension of ESHARE emissions being considered. It is official, ESHARE emisseion are exstended for a year (28k), then halfed every year (14k, 7k, etc.))"
+                },
+                {
+                    "classname": "box boxBold",
+                    "text": "Users can participate in the farm to earn ESHARE: Token ESHARE"
+                }
+            ],
             "videoTitle": "",
             "videoSrc": ""
         },
@@ -65,8 +86,8 @@
             "imageSrc": "/images/defender.png",
             "imageWidth": 65,
             "modalContent": [],
-            "videoTitle": "",
-            "videoSrc": ""
+            "videoTitle": "Detonator Defender",
+            "videoSrc": "https://www.youtube.com/embed/wgupSVo0C5w"
         },
         {
             "id": 14,
@@ -81,8 +102,8 @@
             "imageSrc": "/images/sentinel.png",
             "imageWidth": 65,
             "modalContent": [],
-            "videoTitle": "",
-            "videoSrc": ""
+            "videoTitle": "Sentinel Squadron",
+            "videoSrc": "https://www.youtube.com/embed/l1XD0Xc4j3I?list=PL2ZUX77BqsmVI_WcNGTgcUatMSBsFdnTj"
         }
     ],
     "level2": [
