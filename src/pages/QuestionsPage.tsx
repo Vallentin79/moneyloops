@@ -38,7 +38,9 @@ function QuestionsPage() {
                 </Row>
                 <Row xs={1} sm={1} lg={2} xl={3} xxl={3}>
                     <Col style={{ paddingTop: 4 }}><input name="Investment" type="range" min="100" max="10000" step="100" value={getQ.Investment} onChange={inputChange} className="slider" /></Col>
-                    <Col className='answer'>$ {getQ.Investment}{(getQ.Investment == 10000 ? <span style={{ fontSize: 20 }}>+</span> : '')}</Col>
+                </Row>
+                <Row xs={1} sm={1} lg={2} xl={3} xxl={3} style={{ marginTop: 20 }}>                    
+                    <Col className='answer'>My Investment: $ {getQ.Investment}{(getQ.Investment == 10000 ? <span style={{ position: 'relative', top: -1, left: 1 }}>+</span> : '')}</Col>
                 </Row>
             </Container>
             <Container fluid style={{ marginTop: 40 }}>
