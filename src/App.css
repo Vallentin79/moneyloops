@@ -8,6 +8,18 @@ body {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 30px;
+  }
+}
+
 p.anchor {
   font-size: 12px;
   text-decoration: underline;
@@ -213,4 +225,5 @@ h2 {
   font-size: 20px;
   font-weight: bold;
   color: rgb(168 255 62);
+  margin: 15px 0 10px 0;
 }
