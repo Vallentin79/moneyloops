@@ -31,3 +31,9 @@ export enum Terms {
     short = 1,
     long = 2
 }
+
+export interface Questions{
+    Investment: number,
+    Goals: number,
+    Interact: number,    
+}

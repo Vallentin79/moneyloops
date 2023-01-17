@@ -19,12 +19,12 @@ function App() {
           <Container fluid>
               <Row>
                 <Col>
-                  <h1 className="heading">Questions</h1>
+                  <h1 className="heading">Quick start questions</h1>
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <p>Here you will find questions, to help you the best start in EMP.MONEY!</p>
+                  <p>Please take a minute to answer a few questions so we can point you in the right direction.</p>
                 </Col>
               </Row>
             </Container>

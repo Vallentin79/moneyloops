@@ -208,3 +208,9 @@ h2 {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.answer {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(168 255 62);
+}

@@ -1,66 +1,69 @@
-import React, { useState } from 'react';
-import { ThemeProvider, Container, Row, Col } from 'react-bootstrap';
+import React, { ChangeEvent, useState } from 'react';
+import { ThemeProvider, Container, Row, Col, Form } from 'react-bootstrap';
+import { Questions } from '../data/data.interfaces';
 
 
 function QuestionsPage() {
-    const [investment, setInvestment] = useState(1000);
-    const [goalsA, setGoalsA] = useState(false);
-    const [goalsB, setGoalsB] = useState(false);
-    const [goalsC, setGoalsC] = useState(false);
-    const [goalsD, setGoalsD] = useState(false);
-    const handleInvestment = (e: any) => setInvestment(e.target.value);
-    const handleGoalsA = (e: any) => setGoalsA(e.target.checked);
-    const handleGoalsB = (e: any) => setGoalsB(e.target.checked);
-    const handleGoalsC = (e: any) => setGoalsC(e.target.checked);
-    const handleGoalsD = (e: any) => setGoalsD(e.target.checked);
+    const [getQ, setQ] = useState<Questions>({
+        Investment: 1000,
+        Goals: 1,
+        Interact: 1
+    });
+
+    const GoalsText = [
+        "Funds 100% accessible. Nothing locked. Lowest returns and risk.",
+        "Funds 75% accessible. 25% locked. Medium returns and risk.",
+        "Funds 50% accessible and 50% locked. Medium-high returns and risk.",
+        "Funds 25% accessible and 75% locked. Highest returns and risk."
+    ]
+
+    const InteractText =[
+        "Yes",
+        "A bit of both",
+        "I don’t know",
+        "No"
+    ]
+
+    const inputChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const element = e.target;
+        const value = element.type == 'checkbox' ? element.checked : parseInt(element.value) | 0;
+        setQ({ ...getQ, [element.name]: value });
+    }
+
     return (
         <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
             <Container fluid>
-                <Row xs={1} sm={1} lg={1} xl={1} xxl={1}>
+                <Row xs={1} sm={1} lg={2} xl={2} xxl={2}>
                     <Col><h3>How much are you comfortable investing?</h3></Col>
                 </Row>
                 <Row xs={1} sm={1} lg={4} xl={4} xxl={4}>
-                    <Col style={{ paddingTop: 4 }}><input type="range" min="100" max="10000" step="100" value={investment} onChange={handleInvestment} className="slider" id="myRange" /></Col>
-                    <Col style={{ fontSize: 18, fontWeight: 'bold' }}>${investment}</Col>
+                    <Col style={{ paddingTop: 4 }}><input name="Investment" type="range" min="100" max="10000" step="100" value={getQ.Investment} onChange={inputChange} className="slider" /></Col>
+                    <Col className='answer'>$ {getQ.Investment}{(getQ.Investment == 10000 ? <span style={{ fontSize: 20 }}>+</span> : '')}</Col>
                 </Row>
             </Container>
-            <Container fluid style={{ marginTop: 30 }}>
-                <Row xs={1} sm={1} lg={1} xl={1} xxl={1}>
+            <Container fluid style={{ marginTop: 40 }}>
+                <Row xs={1} sm={1} lg={2} xl={2} xxl={2}>
                     <Col><h3>What are your investing goals? Which of these most apply to you?</h3></Col>
                 </Row>
-                <Row xs={1} sm={1} lg={1} xl={1} xxl={1}>
-                    <Col xs={1} style={{ paddingTop: 4, display: 'flex' }}>
-                        <label className="cb_container">A - All accessible, no locked, lowest returns (Farms and Magik). Lowest risk. (100% farms)
-                            <input type="checkbox" checked={goalsA} onChange={handleGoalsA} id="cb_A" />
-                            <span className="cb_checkmark"></span>
-                        </label>
-                    </Col>
+                <Row xs={1} sm={1} lg={4} xl={4} xxl={4}>
+                    <Col style={{ paddingTop: 4 }}><input name="Goals" type="range" min="0" max="3" step="1" value={getQ.Goals} onChange={inputChange} className="slider" /></Col>
                 </Row>
-                <Row xs={1} sm={1} lg={1} xl={1} xxl={1}>
-                    <Col xs={1} style={{ paddingTop: 4, display: 'flex' }}>
-                        <label className="cb_container">B - Mostly accessible, some locked, medium returns  (75% Farms and 25% Locked) (Default). Medium risk
-                            <input type="checkbox" checked={goalsB} onChange={handleGoalsB} id="cb_B" />
-                            <span className="cb_checkmark"></span>
-                        </label>
-                    </Col>
-                </Row>
-                <Row xs={1} sm={1} lg={1} xl={1} xxl={1}>
-                    <Col xs={1} style={{ paddingTop: 4, display: 'flex' }}>
-                        <label className="cb_container">C - Half accessible, half locked, medium-high returns. Medium-high risk. (50% farms and 50% locked)
-                            <input type="checkbox" checked={goalsC} onChange={handleGoalsC} id="cb_C" />
-                            <span className="cb_checkmark"></span>
-                        </label>
-                    </Col>
-                </Row>
-                <Row xs={1} sm={1} lg={1} xl={1} xxl={1}>
-                    <Col xs={1} style={{ paddingTop: 4, display: 'flex' }}>
-                        <label className="cb_container">D - Mostly locked, some accessible, high returns. Highest risk. (75% locked and 25% farms)
-                            <input type="checkbox" checked={goalsD} onChange={handleGoalsD} id="cb_D" />
-                            <span className="cb_checkmark"></span>
-                        </label>
-                    </Col>
+                <Row xs={1} sm={1} lg={2} xl={2} xxl={2} style={{ marginTop: 20 }}>
+                    <Col className='answer'>Answer: {GoalsText[getQ.Goals]}</Col>
                 </Row>
             </Container>
+            <Container fluid style={{ marginTop: 40 }}>
+                <Row xs={1} sm={1} lg={2} xl={2} xxl={2}>
+                    <Col><h3>Are you willing/able to interact with the protocol on a daily basis to compound/claim, or are you wanting to set it and forget it?</h3></Col>
+                </Row>
+                <Row xs={1} sm={1} lg={4} xl={4} xxl={4}>
+                    <Col style={{ paddingTop: 4 }}><input name="Interact" type="range" min="0" max="3" step="1" value={getQ.Interact} onChange={inputChange} className="slider" /></Col>
+                </Row>
+                <Row xs={1} sm={1} lg={2} xl={2} xxl={2} style={{ marginTop: 20 }}>
+                    <Col className='answer'>Answer: {InteractText[getQ.Interact]}</Col>
+                </Row>
+            </Container>
+            {/* <button onClick={() => console.log("q", getQ)}>click</button> */}
         </ThemeProvider>
     );
 }
