@@ -36,7 +36,7 @@ function QuestionsPage() {
                 <Row xs={1} sm={1} lg={2} xl={2} xxl={2}>
                     <Col><h3>How much are you comfortable investing?</h3></Col>
                 </Row>
-                <Row xs={1} sm={1} lg={4} xl={4} xxl={4}>
+                <Row xs={1} sm={1} lg={2} xl={3} xxl={3}>
                     <Col style={{ paddingTop: 4 }}><input name="Investment" type="range" min="100" max="10000" step="100" value={getQ.Investment} onChange={inputChange} className="slider" /></Col>
                     <Col className='answer'>$ {getQ.Investment}{(getQ.Investment == 10000 ? <span style={{ fontSize: 20 }}>+</span> : '')}</Col>
                 </Row>
@@ -45,7 +45,7 @@ function QuestionsPage() {
                 <Row xs={1} sm={1} lg={2} xl={2} xxl={2}>
                     <Col><h3>What are your investing goals? Which of these most apply to you?</h3></Col>
                 </Row>
-                <Row xs={1} sm={1} lg={4} xl={4} xxl={4}>
+                <Row xs={1} sm={1} lg={2} xl={3} xxl={3}>
                     <Col style={{ paddingTop: 4 }}><input name="Goals" type="range" min="0" max="3" step="1" value={getQ.Goals} onChange={inputChange} className="slider" /></Col>
                 </Row>
                 <Row xs={1} sm={1} lg={2} xl={2} xxl={2} style={{ marginTop: 20 }}>
@@ -56,7 +56,7 @@ function QuestionsPage() {
                 <Row xs={1} sm={1} lg={2} xl={2} xxl={2}>
                     <Col><h3>Are you willing/able to interact with the protocol on a daily basis to compound/claim, or are you wanting to set it and forget it?</h3></Col>
                 </Row>
-                <Row xs={1} sm={1} lg={4} xl={4} xxl={4}>
+                <Row xs={1} sm={1} lg={2} xl={3} xxl={3}>
                     <Col style={{ paddingTop: 4 }}><input name="Interact" type="range" min="0" max="3" step="1" value={getQ.Interact} onChange={inputChange} className="slider" /></Col>
                 </Row>
                 <Row xs={1} sm={1} lg={2} xl={2} xxl={2} style={{ marginTop: 20 }}>
