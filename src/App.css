@@ -216,6 +216,25 @@ h2 {
   margin: 15px 0 10px 0;
 }
 
+.button {
+  background: linear-gradient(270deg, #bfb5ff, #aecaff);
+  border-radius: 19.25px;
+  padding: 7px 30px;
+  color: #000;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+}
+
+.button:hover {
+  background: linear-gradient(270deg, #7664e6, #81adff) !important;
+  color: #fff !important;
+}
+
+.buttonText {
+  font-size: 15px;
+}
+
 @media only screen and (max-width: 900px) {
   body {
     padding: 30px;

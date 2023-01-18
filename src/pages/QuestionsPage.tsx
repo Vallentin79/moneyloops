@@ -17,7 +17,7 @@ function QuestionsPage() {
         "Funds 25% accessible and 75% locked. Highest returns and risk."
     ]
 
-    const InteractText =[
+    const InteractText = [
         "Yes",
         "A bit of both",
         "I don’t know",
@@ -36,8 +36,8 @@ function QuestionsPage() {
                 <Row xs={1} sm={1} lg={1} xl={1} xxl={2}>
                     <Col><h3>How much are you comfortable investing?</h3></Col>
                 </Row>
-                <Row xs={1} sm={1} lg={1} xl={3} xxl={3}>                    
-                    <Col className='answer'><span style={{color: 'white'}}>My Investment:</span> $ {getQ.Investment}{(getQ.Investment == 10000 ? <span style={{ position: 'relative', top: -1, left: 1 }}>+</span> : '')}</Col>
+                <Row xs={1} sm={1} lg={1} xl={3} xxl={3}>
+                    <Col className='answer'><span style={{ color: 'white' }}>My Investment:</span> $ {getQ.Investment}{(getQ.Investment == 10000 ? <span style={{ position: 'relative', top: -1, left: 1 }}>+</span> : '')}</Col>
                 </Row>
                 <Row xs={1} sm={1} lg={2} xl={3} xxl={3}>
                     <Col style={{ paddingTop: 4 }}><input name="Investment" type="range" min="100" max="10000" step="100" value={getQ.Investment} onChange={inputChange} className="slider" /></Col>
@@ -48,7 +48,7 @@ function QuestionsPage() {
                     <Col><h3>What are your investing goals? Which of these most apply to you?</h3></Col>
                 </Row>
                 <Row xs={1} sm={1} lg={1} xl={1} xxl={2}>
-                    <Col className='answer'><span style={{color: 'white'}}>Answer:</span> {GoalsText[getQ.Goals]}</Col>
+                    <Col className='answer'><span style={{ color: 'white' }}>Answer:</span> {GoalsText[getQ.Goals]}</Col>
                 </Row>
                 <Row xs={1} sm={1} lg={2} xl={3} xxl={3}>
                     <Col style={{ paddingTop: 4 }}><input name="Goals" type="range" min="0" max="3" step="1" value={getQ.Goals} onChange={inputChange} className="slider" /></Col>
@@ -59,12 +59,22 @@ function QuestionsPage() {
                     <Col><h3>Are you willing/able to interact with the protocol on a daily basis to compound/claim, or are you wanting to set it and forget it?</h3></Col>
                 </Row>
                 <Row xs={1} sm={1} lg={1} xl={2} xxl={2}>
-                    <Col className='answer'><span style={{color: 'white'}}>Answer:</span> {InteractText[getQ.Interact]}</Col>
+                    <Col className='answer'><span style={{ color: 'white' }}>Answer:</span> {InteractText[getQ.Interact]}</Col>
                 </Row>
                 <Row xs={1} sm={1} lg={2} xl={3} xxl={3}>
                     <Col style={{ paddingTop: 4 }}><input name="Interact" type="range" min="0" max="3" step="1" value={getQ.Interact} onChange={inputChange} className="slider" /></Col>
                 </Row>
             </Container>
+            <Container fluid style={{ marginTop: 40 }}>
+                <Row xs={1} sm={1} lg={1} xl={1} xxl={2}>
+                    <Col>
+                        <button className="button" type="button">
+                            <span className="buttonText">Get My Strategy</span>
+                        </button>
+                    </Col>
+                </Row>
+            </Container>
+
             {/* <button onClick={() => console.log("q", getQ)}>click</button> */}
         </ThemeProvider>
     );
