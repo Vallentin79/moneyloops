@@ -1,14 +1,15 @@
-.main{
-    background-color: hsla(0,0%,45.9%,.161686);
+.main {
+    background-color: hsla(0, 0%, 45.9%, .161686);
     border-radius: 14px;
     padding: 18px 14px 18px 14px;
 }
 
-.main:hover{
-    background-color: hsla(0,0%,45.9%,.561686);  
-    cursor: pointer;  
+.main:hover {
+    background-color: hsla(0, 0%, 45.9%, .561686);
+    cursor: pointer;
 }
 
-.main.selected{
-    background-color: hsla(0,0%,45.9%,.561686);      
+.main.selected {
+    background-color: hsla(0, 0%, 45.9%, .561686);
+    border: 1px solid #b0c6ff;
 }

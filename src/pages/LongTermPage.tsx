@@ -35,7 +35,7 @@ function LongTermPage() {
             {/* LEVEL 2 */}
             {
                 Helper.path.length >= 1 ?
-                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
+                    <Container id="level2" fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>Choose your path</h3></Col>
                         </Row>
@@ -58,7 +58,7 @@ function LongTermPage() {
             {/* LEVEL 3 */}
             {
                 Helper.path.length >= 2 ?
-                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
+                    <Container id="level3" fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>Great choice</h3></Col>
                         </Row>
@@ -81,7 +81,7 @@ function LongTermPage() {
             {/* LEVEL 4 */}
             {
                 Helper.path.length >= 3 ?
-                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
+                    <Container id="level4" fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>It just keeps giving</h3></Col>
                         </Row>
@@ -104,7 +104,7 @@ function LongTermPage() {
             {/* LEVEL 5 */}
             {
                 Helper.path.length >= 4 ?
-                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
+                    <Container id="level5" fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>Keep the wheel turning</h3></Col>
                         </Row>
@@ -127,7 +127,7 @@ function LongTermPage() {
             {/* LEVEL 6 */}
             {
                 Helper.path.length >= 5 ?
-                    <Container fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
+                    <Container id="level6" fluid style={{ marginTop: 30, marginBottom: 30 }} className={'fade-in-item'}>
                         <Row>
                             <Col><h3 style={{ marginBottom: 20 }}>This is awesome</h3></Col>
                         </Row>

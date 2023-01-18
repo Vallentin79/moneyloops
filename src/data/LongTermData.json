@@ -38,11 +38,33 @@
         {
             "id": 102,
             "parents": [],
-            "children": [],
+            "children": [
+                207,
+                208,
+                209
+            ],
             "header": "NFT",
             "text": "Yielding NFT's",
             "level": 1,
             "imageSrc": "/images/Untitled.png",
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
+        },
+        {
+            "id": 103,
+            "parents": [],
+            "children": [
+                210,
+                211,
+                212,
+                213
+            ],
+            "header": "DAAS",
+            "text": "Detoator as a service",
+            "level": 1,
+            "imageSrc": "/images/daas.png",
             "imageWidth": 65,
             "modalContent": [],
             "videoTitle": "",
@@ -157,6 +179,181 @@
             "modalContent": [],
             "videoTitle": "",
             "videoSrc": ""
+        },
+        {
+            "id": 207,
+            "parents": [
+                102
+            ],
+            "children": [
+                301
+            ],
+            "header": "DEFENDER NFT",
+            "text": "Rewards in EMP/ETH LP daily",
+            "level": 2,
+            "imageSrc": "/images/defender.png",
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "Detonator Defender",
+            "videoSrc": "https://www.youtube.com/embed/wgupSVo0C5w"
+        },
+        {
+            "id": 208,
+            "parents": [
+                102
+            ],
+            "children": [],
+            "header": "SENTINEL NFT",
+            "text": "Rewards in ESHARE/MDB daily",
+            "level": 2,
+            "imageSrc": "/images/sentinel.png",
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "Sentinel Squadron",
+            "videoSrc": "https://www.youtube.com/embed/l1XD0Xc4j3I?list=PL2ZUX77BqsmVI_WcNGTgcUatMSBsFdnTj"
+        },
+        {
+            "id": 209,
+            "parents": [
+                102
+            ],
+            "children": [],
+            "header": "POW'R UP ",
+            "text": "Rewards in ETH weekly",
+            "level": 2,
+            "imageSrc": "/images/powrup.PNG",
+            "imageWidth": 65,
+            "modalContent": [],
+            "videoTitle": "",
+            "videoSrc": ""
+        },
+        {
+            "id": 210,
+            "parents": [
+                103
+            ],
+            "children": [],
+            "header": "DETONATOR",
+            "text": "Chance to win (365% ROI)",
+            "level": 2,
+            "imageSrc": "/images/detonator.PNG",
+            "imageWidth": 65,
+            "modalContent": [
+                {                    
+                    "classname": "boxHeader",
+                    "text": "Detonator"
+                },
+                {                   
+                    "classname": "box boxBold",
+                    "text": "Once you deposit into Detonator your deposit is locked, and you now have the ability to earn 365% ROI on your deposit."
+                },
+                {
+                    "classname": "box",
+                    "text": "Every day before the rollover clock ticks down to 0:00, you have the opportunity to either Claim or Compound your daily rewards amount."
+                },
+                {
+                    "classname": "box",
+                    "text": "We highly recommend a 6-1 or 5-2 strategy, where you compound 6 days and claim 1 or compound 5 days and claim 2."
+                }
+            ],
+            "videoTitle": "",
+            "videoSrc": ""
+        },
+        {
+            "id": 211,
+            "parents": [
+                103
+            ],
+            "children": [],
+            "header": "REACTOR",
+            "text": "Chance to win (365% ROI)",
+            "level": 2,
+            "imageSrc": "/images/reactor.PNG",
+            "imageWidth": 65,
+            "modalContent": [
+                {                    
+                    "classname": "boxHeader",
+                    "text": "Reactor"
+                },
+                {                   
+                    "classname": "box boxBold",
+                    "text": "Once you deposit into Reactor your deposit is locked, and you now have the ability to earn 365% ROI on your deposit."
+                },
+                {
+                    "classname": "box",
+                    "text": "Every day before the rollover clock ticks down to 0:00, you have the opportunity to either Claim or Compound your daily rewards amount."
+                },
+                {
+                    "classname": "box",
+                    "text": "We highly recommend a 6-1 or 5-2 strategy, where you compound 6 days and claim 1 or compound 5 days and claim 2."
+                }
+            ],
+            "videoTitle": "",
+            "videoSrc": ""
+        },
+        {
+            "id": 212,
+            "parents": [
+                103
+            ],
+            "children": [],
+            "header": "GENERATOR",
+            "text": "Chance to win (365% ROI)",
+            "level": 2,
+            "imageSrc": "/images/generator.PNG",
+            "imageWidth": 65,
+            "modalContent": [
+                {                    
+                    "classname": "boxHeader",
+                    "text": "Generator"
+                },
+                {                   
+                    "classname": "box boxBold",
+                    "text": "Once you deposit into Generator your deposit is locked, and you now have the ability to earn 365% ROI on your deposit."
+                },
+                {
+                    "classname": "box",
+                    "text": "Every day before the rollover clock ticks down to 0:00, you have the opportunity to either Claim or Compound your daily rewards amount."
+                },
+                {
+                    "classname": "box",
+                    "text": "We highly recommend a 6-1 or 5-2 strategy, where you compound 6 days and claim 1 or compound 5 days and claim 2."
+                }
+            ],
+            "videoTitle": "",
+            "videoSrc": ""
+        },
+        {
+            "id": 213,
+            "parents": [
+                103
+            ],
+            "children": [],
+            "header": "CULTIVATOR",
+            "text": "Chance to win (365% ROI)",
+            "level": 2,
+            "imageSrc": "/images/cultivator.PNG",
+            "imageWidth": 65,
+            "modalContent": [
+                {                    
+                    "classname": "boxHeader",
+                    "text": "Cultivator"
+                },
+                {                   
+                    "classname": "box boxBold",
+                    "text": "Once you deposit into Cultivator your deposit is locked, and you now have the ability to earn 365% ROI on your deposit."
+                },
+                {
+                    "classname": "box",
+                    "text": "Every day before the rollover clock ticks down to 0:00, you have the opportunity to either Claim or Compound your daily rewards amount."
+                },
+                {
+                    "classname": "box",
+                    "text": "We highly recommend a 6-1 or 5-2 strategy, where you compound 6 days and claim 1 or compound 5 days and claim 2."
+                }
+            ],
+            "videoTitle": "",
+            "videoSrc": ""
         }
     ],
     "level3": [
@@ -178,7 +375,7 @@
         {
             "id": 301,
             "parents": [
-                203
+                207
             ],
             "children": [],
             "header": "DETONATOR",

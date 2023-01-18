@@ -22,14 +22,14 @@ function ShortTermPage() {
                 </Row>
                 <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                     {Helper.getShortTermData(1).map((card, index) => {
-                        return <Col key={index}>
+                        return (<Col key={card.id}>
                             <LoopCard
                                 className={Helper.path.includes(card.id) ? 'selected' : ''}
                                 card={card}
                                 onParentSelectChange={setParentSelect}
                                 onChildSelectChange={setChildren}
                                 onLevelSelectChange={setLevel}></LoopCard>
-                        </Col>
+                        </Col>)
                     })}
                 </Row>
             </Container>
@@ -38,12 +38,12 @@ function ShortTermPage() {
                 Helper.path.length >= 1 ?
                     <Container fluid className={'fade-in-item'}>
                         <Row>
-                            <Col><h3 style={{ marginBottom: 20 }}>Choose your path</h3></Col>
+                            <Col><h3 id="level2" style={{ marginBottom: 20 }}>Choose your path</h3></Col>
                         </Row>
                         <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getShortTermData(2).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.short)?.includes(card.id)) {
-                                    return <Col key={index}>
+                                    return <Col key={card.id}>
                                         <LoopCard
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
                                             card={card}
@@ -61,12 +61,12 @@ function ShortTermPage() {
                 Helper.path.length >= 2 ?
                     <Container fluid className={'fade-in-item'}>
                         <Row>
-                            <Col><h3 style={{ marginBottom: 20 }}>Great choice</h3></Col>
+                            <Col><h3 id="level3" style={{ marginBottom: 20 }}>Great choice</h3></Col>
                         </Row>
                         <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getShortTermData(3).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.short)?.includes(card.id)) {
-                                    return <Col key={index}>
+                                    return <Col key={card.id}>
                                         <LoopCard
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
                                             card={card}
@@ -84,12 +84,12 @@ function ShortTermPage() {
                 Helper.path.length >= 3 ?
                     <Container fluid className={'fade-in-item'}>
                         <Row>
-                            <Col><h3 style={{ marginBottom: 20 }}>It just keeps giving</h3></Col>
+                            <Col><h3 id="level4" style={{ marginBottom: 20 }}>It just keeps giving</h3></Col>
                         </Row>
                         <Row xs={1} sm={2} lg={3} xl={4} xxl={5}>
                             {Helper.getShortTermData(4).map((card, index) => {
                                 if (children.includes(card.id) || Helper.getParentChildren(card.level, Terms.short)?.includes(card.id)) {
-                                    return <Col key={index}>
+                                    return <Col key={card.id}>
                                         <LoopCard
                                             className={Helper.path.includes(card.id) ? 'selected' : ''}
                                             card={card}

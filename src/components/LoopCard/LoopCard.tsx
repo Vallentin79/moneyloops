@@ -46,10 +46,25 @@ function LoopCard({ card, className, onParentSelectChange, onChildSelectChange, 
         toggleVideo();
     };
 
+    function _scrollTo(id: number) {
+        const elementId = 'level' + (id + 1).toString();
+        setTimeout(() => {
+            const element = document.getElementById(elementId);
+            element?.scrollIntoView();    
+        }, 400);        
+    };
+
     // , padding: [36, 37].includes(card.id) ? 15 : [13, 14, 100, 101, 102, 204, 205, 300, 301].includes(card.id) ? 5 : 0
 
     return (
-        <div className={'main ' + className} style={{ marginBottom: 20, paddingBottom: 5 }} onClick={(event) => { onParentSelectChange(card.parents); onChildSelectChange(card.children); onLevelSelectChange(card.level); Helper.navigator(card.id, card.level) }}>
+        <div className={'main ' + className} style={{ marginBottom: 20, paddingBottom: 5 }}
+            onClick={(event) => {
+                onParentSelectChange(card.parents);
+                onChildSelectChange(card.children);
+                onLevelSelectChange(card.level);
+                Helper.navigator(card.id, card.level);
+                _scrollTo(card.level)
+            }}>
             <Container style={{ minHeight: 70 }} >
                 <Row>
                     <Col style={{ padding: 0 }} xs={3} className="text-center">
@@ -68,15 +83,15 @@ function LoopCard({ card, className, onParentSelectChange, onChildSelectChange, 
             <Container>
                 <Row>
                     <Col xs={6}>
-                        { card.modalContent.length > 0 ?
+                        {card.modalContent.length > 0 ?
                             <div>
                                 <p onClick={event => handleAnchorClick(event)} className="anchor">View Info</p>
                                 <Modal isOpen={isOpen} toggle={toggle}>
                                     <Container>
                                         {
-                                            card.modalContent.map(content => {
+                                            card.modalContent.map((content, i) => {
                                                 return (
-                                                    <Row>
+                                                    <Row key={i}>
                                                         <Col className={content.classname}>{content.text}</Col>
                                                     </Row>
                                                 )
