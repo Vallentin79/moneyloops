@@ -6,7 +6,8 @@
             "children": [
                 200,
                 201,
-                202
+                202,
+                214
             ],
             "header": "FARMS",
             "text": "Auto farms, set and forget",
@@ -352,6 +353,21 @@
                     "text": "We highly recommend a 6-1 or 5-2 strategy, where you compound 6 days and claim 1 or compound 5 days and claim 2."
                 }
             ],
+            "videoTitle": "",
+            "videoSrc": ""
+        },
+        {
+            "id": 214,
+            "parents": [
+                100
+            ],
+            "children": [],
+            "header": "DEX FiNANCE",
+            "text": "Auto burn vault",
+            "level": 2,
+            "imageSrc": "/images/dex.png",
+            "imageWidth": 60,
+            "modalContent": [],
             "videoTitle": "",
             "videoSrc": ""
         }

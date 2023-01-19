@@ -14,8 +14,8 @@ function App() {
     <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
       <div className="App">
         <Tabs defaultActiveKey="questions" id="uncontrolled-tab-example" className="mb-3">
-          <Tab eventKey="questions" title="Path Guidance">
           
+          <Tab eventKey="questions" title="Quick Start">          
           <Container fluid>
               <Row>
                 <Col>
@@ -35,13 +35,13 @@ function App() {
                 </Col>
               </Row>
             </Container>
-
           </Tab>
-          <Tab eventKey="loops" title="Find Your Path">
+
+          <Tab eventKey="loops" title="Strategies">
             <Container fluid>
               <Row>
                 <Col>
-                  <h1 className="heading">Money Loops</h1>
+                  <h1 className="heading">Find Your Strategy</h1>
                 </Col>
               </Row>
               <Row>
@@ -58,6 +58,7 @@ function App() {
               </Row>
             </Container>
           </Tab>
+
         </Tabs>
       </div>
     </ThemeProvider>
