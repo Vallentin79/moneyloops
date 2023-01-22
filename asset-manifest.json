@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/moneyloops/static/css/main.239da419.css",
-    "main.js": "/moneyloops/static/js/main.05856118.js",
+    "main.js": "/moneyloops/static/js/main.0c3c3d8f.js",
     "static/js/787.6e040251.chunk.js": "/moneyloops/static/js/787.6e040251.chunk.js",
     "static/media/bg.ad1826de.png": "/moneyloops/static/media/bg.ad1826de.ad1826ded1ab8a938e10.png",
     "static/media/bootstrap-icons.woff?": "/moneyloops/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
     "static/media/bootstrap-icons.woff2?": "/moneyloops/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "index.html": "/moneyloops/index.html",
     "main.239da419.css.map": "/moneyloops/static/css/main.239da419.css.map",
-    "main.05856118.js.map": "/moneyloops/static/js/main.05856118.js.map",
+    "main.0c3c3d8f.js.map": "/moneyloops/static/js/main.0c3c3d8f.js.map",
     "787.6e040251.chunk.js.map": "/moneyloops/static/js/787.6e040251.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.239da419.css",
-    "static/js/main.05856118.js"
+    "static/js/main.0c3c3d8f.js"
   ]
 }
